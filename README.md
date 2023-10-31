@@ -1,5 +1,5 @@
 # wdpai2024
-# Project Name
+# Cake Joy
 
 ![Project Logo](link-to-your-logo.png) <!-- Optional: Add a logo or screenshot of your web app -->
 
