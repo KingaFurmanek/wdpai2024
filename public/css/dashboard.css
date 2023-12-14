@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+}
+
+.container {
+    margin: 0;
+    background-color: #FFF0F6;
+    color: #63565C;
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    color: #63565C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: -20px;
+}
+
+nav>h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-right: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: larger;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.hello-quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    background-image: url('../../public/img/dashboard_background.svg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    height: 40%;
+    margin-top: -15px;
+}
+
+.hello-quote>h1 {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.hello-quote>h2 {
+    margin-top: -10px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.ordering-container {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.step1,
+.step2,
+.step3,
+.step4,
+.step5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.order-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #97DFFF;
+    color: white;
+    font-size: 25px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 10%;
+}
+
+button:hover {
+    background-color: #97DFFF;
+}
+
+.navbar-bottom {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFF0F6;
+    height: 8%;
+}
+
+.navbar-bottom>ul {
+    font-size: 25px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    gap: 2rem;
+    margin-left: 20px;
+}
+
+.navbar-bottom>.media {
+    margin-right: 40px;
+    gap: 5rem;
+}
+
+.navbar-bottom > .media-navbar {
+    display: none;
+}
+
+@media (max-width: 600px) {
+
+    nav {
+        display: none;
+    }
+    
+
+    main {
+        margin-top: -20px;
+        /* Adjusting margin-top to align content properly */
+    }
+
+    /* Ukryj obrazek w sekcji .hello-quote */
+    .hello-quote{
+        margin-top: 60px;
+    }
+
+    .ordering-container {
+        flex-direction: column;
+        margin-top: 100px;
+        align-items: flex-start;
+        width: 80%;
+    }
+
+    .step1,
+    .step2,
+    .step3,
+    .step4,
+    .step5 {
+        flex:1;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .order-button{
+        margin-top: 80px;
+        width: 30%;
+    }
+
+    .navbar-bottom > ul{
+        display: none; /* Ukryj domyślny tekst dla mniejszych ekranów */
+    }
+
+    .navbar-bottom > .media{
+        display: none; /* Ukryj domyślny tekst dla mniejszych ekranów */
+    }
+
+    .navbar-bottom > .media-navbar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        gap: 2rem;
+        width: inherit;
+    }
+
+    .navbar-bottom .media-navbar button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        outline: none; /* Usuwa obramowanie po kliknięciu */
+    }
+
+    .navbar-bottom .media-navbar button:hover {
+        background: none; /* Wyłącza podświetlanie po najechaniu */
+    }
+}

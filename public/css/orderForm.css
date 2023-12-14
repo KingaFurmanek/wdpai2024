@@ -1,0 +1,251 @@
+body {
+    margin: 0;
+}
+
+.container {
+    margin: 0;
+    background-color: #FFF0F6;
+    color: #63565C;
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    color: #63565C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: -20px;
+}
+
+nav > h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-right: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: larger;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.order-container {
+    overflow-y: auto; /* Dodanie obszaru przewijania */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%; /* Zmiana szerokości na 100% */
+    background: url("../../public/img/light_background.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 80%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 90%; /* Zmiana szerokości formularza */
+    max-width: 600px; /* Ograniczenie szerokości formularza */
+}
+
+input {
+    margin-bottom: 20px; /* Zwiększenie marginesu */
+    padding: 15px; /* Zmniejszenie paddingu */
+    border: 2px solid #ccc;
+    border-radius: 7px;
+    font-size: 18px; /* Zmniejszenie rozmiaru czcionki */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+p {
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.custom-dropdown select {
+    width: 100%;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Zwiększenie marginesu */
+    padding: 15px; /* Zmniejszenie paddingu */
+    border: 2px solid #ccc;
+    border-radius: 7px;
+    font-size: 18px; /* Zmniejszenie rozmiaru czcionki */
+}
+
+.custom-checkboxes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Zmiana na align-start, aby wyrównać do lewej */
+}
+
+.custom-checkboxes label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Dodałem odstęp między checkboxami */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+}
+
+.custom-checkboxes input {
+    margin-right: 10px; /* Dodatkowy odstęp między checkboxem a tekstem */
+    margin-top: 20px;
+}
+
+.send-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #97DFFF;
+    color: white;
+    font-size: 25px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 10%;
+    margin-top: 1%;
+}
+
+button:hover {
+    background-color: #97DFFF;
+}
+
+.navbar-bottom {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFF0F6;
+    height: 8%;
+    transition: transform 0.5s ease;
+  }
+  
+  .navbar-bottom > ul {
+    font-size: 25px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    gap: 2rem;
+    margin-left: 20px;
+  }
+  
+  .navbar-bottom > .media {
+    margin-right: 40px;
+    gap: 5rem;
+  }
+
+  .navbar-bottom > .media-navbar {
+    display: none;
+}
+
+  @media (max-width: 600px) {
+
+    nav {
+        display: none;
+    }
+    
+
+    main {
+        margin:auto;
+        height: 90%;
+    }
+
+    .order-container > form{
+        width: 80%;
+        margin-top: 10%;
+    }
+
+    .order-container > form p{
+        width: 100%;
+    }
+
+    .order-container{
+        background: none;
+    }
+
+    .send-button{
+        width: 30%;
+    }
+
+    .navbar-bottom > ul{
+        display: none; /* Ukryj domyślny tekst dla mniejszych ekranów */
+    }
+
+    .navbar-bottom > .media{
+        display: none; /* Ukryj domyślny tekst dla mniejszych ekranów */
+    }
+
+    .navbar-bottom > .media-navbar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        gap: 2rem;
+        width: inherit;
+    }
+
+    .navbar-bottom .media-navbar button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        outline: none; /* Usuwa obramowanie po kliknięciu */
+    }
+
+    .navbar-bottom .media-navbar button:hover {
+        background: none; /* Wyłącza podświetlanie po najechaniu */
+    }
+}
