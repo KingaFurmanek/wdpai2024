@@ -1,5 +1,5 @@
 # wdpai2024
-# Project Name
+# Cake Joy
 
 ![Project Logo](link-to-your-logo.png) <!-- Optional: Add a logo or screenshot of your web app -->
 
@@ -45,14 +45,12 @@ Explain how to use your web application. Provide code examples or step-by-step i
 
 List of technologies and frameworks used in this project:
 
-- **HTML5:** Used for structuring web content.
-- **CSS3:** Used for styling the user interface.
-- **JavaScript:** Used for adding interactivity and logic to the application.
-- **React.js:** A JavaScript library for building user interfaces.
-- **Node.js:** A runtime environment for executing JavaScript on the server-side.
-- **Express.js:** A web application framework for Node.js.
-- **MongoDB:** A NoSQL database used for storing and retrieving data.
-- **Other Libraries or Tools:** Any other relevant libraries or tools used in the project.
+- **HTML5** 
+- **CSS3** 
+- **JavaScript** 
+- **PostgreSQL** 
+- **PHP**
+- **DOCKER**
 
 ## Contact
 Contact to me
