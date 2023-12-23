@@ -23,6 +23,16 @@
                 <p>Password</p>
                 <input name="password" type="password" placeholder="">
                 <button>Sign up</button>
+                <p>Street</p>
+                <input name="street" type="text" placeholder="">
+                <p>Postal Code</p>
+                <input name="postalCode" type="text" placeholder="">
+                <p>City</p>
+                <input name="city" type="text" placeholder="">
+                <p>House Number</p>
+                <input name="houseNumber" type="text" placeholder="">
+                <p>Apartment Number (optional)</p>
+                <input name="apartmentNumber" type="text" placeholder="">
             </form>
         </div>
     </div>
