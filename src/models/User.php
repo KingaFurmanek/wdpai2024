@@ -1,20 +1,21 @@
 <?php
 
-class User{
-
+class User {
     private $email;
     private $password;
     private $name;
     private $surname;
+    private $address;
 
-    public function __construct(string $email, string $password, string $name, string $surname){
+    public function __construct(string $email, string $password, string $name, string $surname, Address $address) {
         $this->email = $email;
         $this->password = $password;
         $this->name = $name;
         $this->surname = $surname;
+        $this->address = $address;
     }
 
-    public function getEmail(): string 
+    public function getEmail(): string
     {
         return $this->email;
     }
@@ -52,5 +53,13 @@ class User{
     public function setSurname(string $surname): void
     {
         $this->surname = $surname;
+    }
+
+    public function getAddress(): Address {
+        return $this->address;
+    }
+
+    public function setAddress(Address $address): void {
+        $this->address = $address;
     }
 }
