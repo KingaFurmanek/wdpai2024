@@ -30,8 +30,6 @@ class AppController {
             ob_start();
             include $templatePath;
             $output = ob_get_clean();
-        }else{
-            //
         }
         print $output;
     }

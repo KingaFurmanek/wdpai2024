@@ -15,5 +15,6 @@ Router::get('success', 'DefaultController');
 Router::get('account', 'DefaultController');
 Router::get('FileNotFound', 'ErrorController');
 Router::post('login', 'SecurityController');
+Router::post('signUp', 'SecurityController');
 
 Router::run($path);
