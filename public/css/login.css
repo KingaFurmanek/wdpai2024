@@ -144,6 +144,6 @@ button:hover {
 
   .logo {
     height: 35vh;
-    justify-content: top;
+    justify-content: flex-start;
   }
 }

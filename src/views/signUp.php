@@ -11,9 +11,17 @@
 
 <body>
     <div class="container">
-
         <div class="signUp-container">
-            <form>
+            <form method="POST">
+                <div class="messages">
+                    <?php
+                    if(isset($messages)){
+                        foreach($messages as $message) {
+                            echo $message;
+                        }
+                    }
+                    ?>
+                </div>
                 <p>Name</p>
                 <input name="name" type="text" placeholder="">
                 <p>Surname</p>
@@ -22,17 +30,17 @@
                 <input name="email" type="text" placeholder="">
                 <p>Password</p>
                 <input name="password" type="password" placeholder="">
-                <button>Sign up</button>
-                <p>Street</p>
-                <input name="street" type="text" placeholder="">
-                <p>Postal Code</p>
-                <input name="postalCode" type="text" placeholder="">
+                <p>Country</p>
+                <input name="country" type="text" placeholder="">
+                <p>Post Code</p>
+                <input name="postcode" type="text" placeholder="">
                 <p>City</p>
                 <input name="city" type="text" placeholder="">
-                <p>House Number</p>
-                <input name="houseNumber" type="text" placeholder="">
-                <p>Apartment Number (optional)</p>
-                <input name="apartmentNumber" type="text" placeholder="">
+                <p>Street</p>
+                <input name="street" type="text" placeholder="">
+                <p>Flat number / House number</p>
+                <input name="number" type="text" placeholder="">
+                <button type="submit" id="signUpButton" href="login">Sign up</button>
             </form>
         </div>
     </div>

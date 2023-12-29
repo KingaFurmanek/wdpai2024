@@ -15,9 +15,9 @@
             <h2>Cake Joy</h2>
             <div class="menu">
                 <ul>
-                    <a>HOME</a>
-                    <a>ORDER</a>
-                    <a>ACCOUNT</a>
+                    <a href="dashboard">HOME</a>
+                    <a href="chooseCategory">ORDER</a>
+                    <a href="account">ACCOUNT</a>
                 </ul>
                 <div class="logo">
                     <img src="../../public/img/logo_withoutBackground.svg">

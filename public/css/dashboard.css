@@ -46,6 +46,11 @@ ul {
     font-size: larger;
 }
 
+ul > a{
+    text-decoration: none; /* Usunięcie podkreślenia */
+    color: #63565C; /* Domyślny kolor tekstu */
+}
+
 .menu {
     display: flex;
     align-items: center;
