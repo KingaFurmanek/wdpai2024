@@ -40,7 +40,7 @@ class AddressRepository extends Repository{
 
         $stmt->execute([
             $address->getCountry(),
-            $address->getPostCode(),  // Tutaj zmieniłem na getPostCode zamiast getPostcode
+            $address->getPostCode(),
             $address->getCity(),
             $address->getStreet(),
             $address->getNumber()

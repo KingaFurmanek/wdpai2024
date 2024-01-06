@@ -194,3 +194,23 @@ ul > a{
         background: none; /* Wyłącza podświetlanie po najechaniu */
     }
 }
+
+
+@media (min-width: 601px) and (max-width: 1400px){
+    .success-img{
+        size:15px;
+    }
+
+    .success-container {
+        height: 40%;
+        width: 90%;
+    }
+
+    .done-button {
+        padding: 8px;
+        font-size: 25px;
+        font-weight: 600;
+        width: 8%;
+    }
+
+}

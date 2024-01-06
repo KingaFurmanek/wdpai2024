@@ -1,3 +1,15 @@
+<?php
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+
+if (isset($_SESSION['name'])) {
+    $userName = htmlspecialchars($_SESSION['name']);
+} else {
+    $userName = ''; //default value
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,7 +42,7 @@
             <div class="account-container">
                 <div class="login">
                     <img step1 src="../../public/img/login.svg">
-                    <p>Login</p>
+                    <p><?php echo $userName; ?></p>
                 </div>
                 <div class="data-container">
                     <div class="element">

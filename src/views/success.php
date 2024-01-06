@@ -45,7 +45,7 @@
                     </p>
                 </div>
             </div>
-            <button class="done-button">Done</button>
+            <button class="done-button" type="button" onclick="window.location.href='dashboard'">Done</button>
 
         </main>
         <div class="navbar-bottom">

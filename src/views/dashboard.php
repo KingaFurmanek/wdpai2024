@@ -66,7 +66,7 @@ if (isset($_SESSION['name'])) {
                 <p>Enjoy Your Order</p>
             </div>
         </div>
-        <button class="order-button">Order</button>
+        <button class="order-button" type="button" onclick="window.location.href='chooseCategory'">Order</button>
 
     </main>
     <div class="navbar-bottom">

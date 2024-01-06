@@ -229,3 +229,13 @@ button:hover {
         background: none; /* Wyłącza podświetlanie po najechaniu */
     }
 }
+
+@media (min-width: 601px) and (max-width: 1400px){
+    .order-button {
+        padding: 8px;
+        font-size: 25px;
+        font-weight: 600;
+        width: 8%;
+        margin-bottom: 15px;
+    }
+}

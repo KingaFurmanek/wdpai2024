@@ -84,10 +84,10 @@ ul > a{
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 50px;
     align-items: flex-end;
     margin: auto;
-    /* Zmiana align-items na flex-end */
     margin-top: 100px;
 }
 
@@ -201,15 +201,30 @@ button:hover {
         height: 90%;
     }
 
-    /* Ukryj obrazek w sekcji .hello-quote */
+    body {
+        margin: 0; /* Usuń marginesy dla body */
+        overflow-x: hidden; /* Ukryj przewijanie poziome */
+    }
+
+    html, body {
+        max-width: 100%; /* Zablokuj maksymalną szerokość */
+        overflow-y: auto; /* Pozostaw przewijanie pionowe tylko, jeśli jest to konieczne */
+    }
+
     .quote {
-        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+    /* Ukryj obrazek w sekcji .hello-quote */
+    .quote img {
+        display: none;
+        visibility: hidden;
     }
 
     .quote > h1 {
         font-size: 30px;
         font-weight: 600;
-        margin-top: 100px;
+        margin-top: 200px;
+
     }
 
     .category-container {
@@ -220,6 +235,8 @@ button:hover {
         justify-content: flex-start;
         align-items: flex-end;
         overflow-x: auto;
+        margin-left: 30px;
+        margin-bottom:20px;
     }
     
     .cupcakes,
@@ -260,7 +277,7 @@ button:hover {
     }
 
     .next-button {
-        margin-top: 80px;
+        margin-top: 50px;
         width: 30%;
     }
 
@@ -295,5 +312,22 @@ button:hover {
     .navbar-bottom .media-navbar button:hover {
         background: none;
         /* Wyłącza podświetlanie po najechaniu */
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1400px){
+    .category-container {
+        height: 55%;
+    }
+
+    .category-container{
+        margin-bottom: 0px;
+    }
+    .next-button{
+        margin-top: 5px;
+        padding: 8px;
+        font-size: 25px;
+        font-weight: 600;
+        width: 8%;
     }
 }

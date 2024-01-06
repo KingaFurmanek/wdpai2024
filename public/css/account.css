@@ -209,3 +209,10 @@ ul > a{
         /* Wyłącza podświetlanie po najechaniu */
     }
 }
+
+@media (min-width: 601px) and (max-width: 1400px){
+    .account-container {
+        margin-top: 0px;
+    }
+}
+

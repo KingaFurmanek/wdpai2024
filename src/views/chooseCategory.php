@@ -61,7 +61,7 @@
                 </div>
                 <div class="highlight"></div>
             </div>
-            <button class="next-button">Next</button>
+            <button class="next-button" type="button" onclick="window.location.href='orderForm'">Next</button>
 
         </main>
         <div class="navbar-bottom">

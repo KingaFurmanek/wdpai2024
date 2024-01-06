@@ -27,7 +27,6 @@
         </nav>
 
         <main>
-
             <div class="order-container">
                 <form>
                     <p>Ocasion</p>
@@ -75,32 +74,33 @@
                 <button class="send-button">Send</button>
             </div>
 
+            <nav class="navbar-bottom">
+                <ul>
+                    <a>About Us</a>
+                    <a>Contact</a>
+                </ul>
+                <div class="media">
+                    <img src="../../public/img/facebook.svg">
+                    <img src="../../public/img/instagram.svg">
+                    <img src="../../public/img/twitter.svg">
+                </div>
+                <script src="../script.js"></script>
+
+                <div class="media-navbar">
+                    <button class="home-button">
+                        <img src="../../public/img/home_media_button.svg">
+                    </button>
+                    <button class="order-media-button">
+                        <img src="../../public/img/order_media_button.svg">
+                    </button>
+                    <button class="account-button">
+                        <img src="../../public/img/account_media_button.svg">
+                    </button>
+                </div>
+            </nav>
         </main>
 
-        <div class="navbar-bottom">
-            <ul>
-                <a>About Us</a>
-                <a>Contact</a>
-            </ul>
-            <div class="media">
-                <img src="../../public/img/facebook.svg">
-                <img src="../../public/img/instagram.svg">
-                <img src="../../public/img/twitter.svg">
-            </div>
-            <script src="../script.js"></script>
-            
-            <div class="media-navbar">
-                <button class="home-button">
-                    <img src="../../public/img/home_media_button.svg">
-                </button>
-                <button class="order-media-button">
-                    <img src="../../public/img/order_media_button.svg">
-                </button>
-                <button class="account-button">
-                    <img src="../../public/img/account_media_button.svg">
-                </button>
-            </div>
-        </div>
+
     </div>
 </body>
 
